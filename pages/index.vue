@@ -7,7 +7,8 @@
         content="Andorable is a curated list and blog all about streaming Star Wars shows."
       />
     </Head>
-    <h1>Currently streaming</h1>
+
+    <h1>{{ $t("home.header") }}</h1>
 
     <section class="grid grid-cols-3 gap-4">
       <div

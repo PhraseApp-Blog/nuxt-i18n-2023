@@ -21,9 +21,15 @@
             {{ $t("app_title") }}</LocLink
           >
           <ul class="flex gap-6 text-lg">
-            <li><LocLink to="/">Shows</LocLink></li>
-            <li><LocLink to="/blog">Blog</LocLink></li>
-            <li><LocLink to="/about">About</LocLink></li>
+            <li>
+              <LocLink to="/">{{ $t("nav.shows") }}</LocLink>
+            </li>
+            <li>
+              <LocLink to="/blog">{{ $t("nav.blog") }}</LocLink>
+            </li>
+            <li>
+              <LocLink to="/about">{{ $t("nav.about") }}</LocLink>
+            </li>
           </ul>
         </nav>
       </header>

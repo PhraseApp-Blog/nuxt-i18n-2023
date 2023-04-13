@@ -3,8 +3,14 @@ export default defineI18nConfig((_nuxt) => ({
   messages: {
     "en-CA": {
       app_title: "Andorable",
+      nav: {
+        shows: "Shows",
+        blog: "Blog",
+        about: "About",
+      },
       home: {
         title: "Andorable - Star Wars Shows",
+        header: "Currently Streaming",
       },
       about: {
         title: "About",
@@ -13,8 +19,14 @@ export default defineI18nConfig((_nuxt) => ({
     },
     "ar-EG": {
       app_title: "أندورابل",
+      nav: {
+        shows: "برامج",
+        blog: "المدونة",
+        about: "نبذة عنا",
+      },
       home: {
         title: "أندورابل - برامج حرب النجوم",
+        header: "يُبَث حالياً",
       },
       about: {
         title: "نبذة عنا",
