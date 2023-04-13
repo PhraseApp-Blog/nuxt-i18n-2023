@@ -1,3 +1,5 @@
 export const title = (pageTitle: string): string => {
-  return `${pageTitle} | Andorable`
+  const { t } = useI18n()
+
+  return `${pageTitle} | ${t("app_title")}`
 }
