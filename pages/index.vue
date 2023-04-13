@@ -15,7 +15,7 @@
         :key="show.id"
         class="bg-slate-900 rounded-md overflow-hidden shadow-sm shadow-slate-900"
       >
-        <NuxtLink :to="`/shows/${show.id}`">
+        <LocLink :to="`/shows/${show.id}`">
           <img :src="show.img" :alt="`Image for ${show.name}`" />
           <h3 class="font-semibold px-2 pt-1 mb-1">{{ show.name }}</h3>
           <div
@@ -24,7 +24,7 @@
             <p>{{ show.premieredAt }}</p>
             <p>{{ show.episodeCount }} episodes</p>
           </div>
-        </NuxtLink>
+        </LocLink>
       </div>
     </section>
   </div>
