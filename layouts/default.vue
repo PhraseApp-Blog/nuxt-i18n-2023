@@ -1,13 +1,10 @@
 <template>
-  <Body class="bg-slate-800 text-purple-50">
+  <Body>
     <header class="bg-slate-900 text-purple-100 shadow-sm shadow-slate-900">
-      <nav class="flex gap-8 items-center p-2">
+      <nav class="flex gap-8 items-center py-1 px-2">
         <NuxtLink to="/" class="flex items-center text-xl font-bold"
           ><span class="logo-container"
-            ><img
-              src="/img/brand-logo.svg"
-              alt="Andorable logo"
-              class="logo fill-white stroke-white"
+            ><img src="/img/brand-logo.svg" alt="Andorable logo"
           /></span>
           Andorable</NuxtLink
         >
@@ -28,9 +25,5 @@
 .logo-container {
   max-width: 60px;
   max-height: 60px;
-}
-.logo {
-  width: 100%;
-  height: auto;
 }
 </style>
