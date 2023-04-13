@@ -1,7 +1,7 @@
 <template>
   <div>
     <Head>
-      <Title>{{ $t("home_title") }}</Title>
+      <Title>{{ $t("home.title") }}</Title>
       <Meta
         name="description"
         content="Andorable is a curated list and blog all about streaming Star Wars shows."
