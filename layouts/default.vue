@@ -7,7 +7,7 @@
             ><span class="logo-container"
               ><img src="/img/brand-logo.svg" alt="Andorable logo"
             /></span>
-            Andorable</NuxtLink
+            {{ $t("app_title") }}</NuxtLink
           >
           <ul class="flex gap-6 text-lg">
             <li><NuxtLink to="/">Shows</NuxtLink></li>

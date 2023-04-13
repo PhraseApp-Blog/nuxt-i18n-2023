@@ -1,7 +1,7 @@
 <template>
   <div>
     <Head>
-      <Title>Andorable - Star Wars Shows</Title>
+      <Title>{{ $t("home_title") }}</Title>
       <Meta
         name="description"
         content="Andorable is a curated list and blog all about streaming Star Wars shows."
