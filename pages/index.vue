@@ -6,7 +6,7 @@
       <div
         v-for="show in shows"
         :key="show.id"
-        class="bg-slate-900 rounded-md overflow-hidden shadow-sm show-slate-50"
+        class="bg-slate-900 rounded-md overflow-hidden shadow-sm shadow-slate-900"
       >
         <NuxtLink :to="`/shows/${show.id}`">
           <img :src="show.img" :alt="`Image for ${show.name}`" />
