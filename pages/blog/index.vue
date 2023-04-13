@@ -8,10 +8,9 @@
           :key="post._path"
           class="border-b border-b-white/10 last:border-b-0 mb-3 pb-3"
         >
-          <NuxtLink :to="post._path" class="flex items-baseline gap-1">
+          <NuxtLink :to="post._path" class="items-baseline gap-1">
             <h3 class="text-xl font-bold">{{ post.title }}</h3>
-            —
-            <p class="text-lg">{{ post.description }}</p>
+            <p class="font-thin">{{ post.description }}</p>
           </NuxtLink>
         </li>
       </ContentList>
