@@ -1,12 +1,5 @@
 <template>
   <div>
-    <Head>
-      <Title>Andorable - Star Wars Shows</Title>
-      <Meta
-        name="description"
-        content="Andorable is a curated list and blog all about streaming Star Wars shows."
-      />
-    </Head>
     <Body>
       <header class="bg-slate-900 text-purple-100 shadow-sm shadow-slate-900">
         <nav class="flex gap-8 items-center py-1 px-2 max-w-[1200px] mx-auto">
