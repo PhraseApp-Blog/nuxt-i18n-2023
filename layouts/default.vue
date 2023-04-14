@@ -1,5 +1,5 @@
 <template>
-  <Html :lang="head.htmlAttrs?.lang ?? ''" :dir="head.htmlAttrs?.dir ?? 'ltr'">
+  <Html :lang="htmlAttrs.lang" :dir="htmlAttrs.dir">
     <Head>
       <Title>{{ $t("app_title") }}</Title>
       <template v-for="link in head.link" :key="link.id">
@@ -55,6 +55,7 @@ const head = useLocaleHead({
   identifierAttribute: "id",
   addSeoAttributes: true,
 })
+const htmlAttrs = computed(() => head.value.htmlAttrs!)
 </script>
 
 <style scoped>
