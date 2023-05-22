@@ -6,17 +6,19 @@
     </Head>
     <div>
       <h1 class="text-5xl">{{ show.name }}</h1>
-      <div class="w-[400px] pb-3 mb-3 border-b border-b-white/10">
-        <div class="rounded-md overflow-hidden">
+      <div class="mb-3 w-[400px] border-b border-b-white/10 pb-3">
+        <div class="overflow-hidden rounded-md">
           <img :src="show.img" :alt="`Image for ${show.name}`" />
         </div>
-        <div class="flex justify-between mt-3 px-1">
+        <div class="mt-3 flex justify-between px-1">
           <p class="text-sm font-light">Premiered {{ show.premieredAt }}</p>
-          <p class="text-sm font-light">{{ show.episodeCount }} episodes</p>
+          <p class="text-sm font-light">
+            {{ $t("show.episodes", show.episodeCount) }}
+          </p>
         </div>
       </div>
-      <p class="text-lg px-1">{{ show.description }}</p>
-      <p class="text px-1 mt-3">
+      <p class="px-1 text-lg">{{ show.description }}</p>
+      <p class="text mt-3 px-1">
         —
         <a :href="show.source" class="text-purple-500 underline"
           >From Wikipedia</a

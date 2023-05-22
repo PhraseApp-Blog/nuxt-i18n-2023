@@ -13,6 +13,9 @@ export default {
     title: "About",
     body: "Andorable is all about streaming Star Wars shows. The site started as a passion project and grew into what it is today.",
   },
+  show: {
+    episodes: "{n} episode | {n} episodes",
+  },
   notifications: {
     new_episode: "Hello, {username}. A new esposide of {show} just landed!",
   },
