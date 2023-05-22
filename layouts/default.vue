@@ -13,19 +13,19 @@
     </Head>
     <Body>
       <header class="bg-slate-900 text-purple-100 shadow-sm shadow-slate-900">
-        <nav class="flex gap-8 items-baseline py-1 px-2 max-w-[1200px] mx-auto">
-          <LocLink to="/" class="shrink-0 flex items-baseline text-xl font-bold"
+        <nav class="mx-auto flex max-w-[1200px] items-baseline gap-8 px-2 py-1">
+          <LocLink to="/" class="flex shrink-0 items-baseline text-xl font-bold"
             ><span class="logo-container"
               ><img src="/img/brand-logo.svg" alt="Andorable logo"
             /></span>
-            <span class="block relative -top-5">{{
+            <span class="relative -top-5 block">{{
               $t("app_title")
             }}</span></LocLink
           >
           <div
-            class="w-full flex relative -top-5 items-baseline justify-between"
+            class="relative -top-5 flex w-full items-baseline justify-between"
           >
-            <ul class="flex grow-1 gap-6 text-lg">
+            <ul class="grow-1 flex gap-6 text-lg">
               <li>
                 <LocLink to="/">{{ $t("nav.shows") }}</LocLink>
               </li>
@@ -42,7 +42,10 @@
         </nav>
       </header>
 
-      <main class="px-4 py-6 max-w-[1200px] mx-auto">
+      <main class="mx-auto max-w-[1200px] px-4 py-6">
+        <Notification>{{
+          $t("notifications.new_episode", { username: "Mary", show: "Andor" })
+        }}</Notification>
         <slot />
       </main>
     </Body>
