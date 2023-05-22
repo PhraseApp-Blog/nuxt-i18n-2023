@@ -22,7 +22,7 @@
           <div
             class="mb-2 flex justify-between px-2 text-xs font-light text-purple-100/50"
           >
-            <p>{{ show.premieredAt }}</p>
+            <p>{{ $d(Date.parse(show.premieredAt), "short") }}</p>
             <p>{{ $t("show.episodes", show.episodeCount) }}</p>
           </div>
         </LocLink>
