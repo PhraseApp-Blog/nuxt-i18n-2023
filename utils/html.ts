@@ -13,9 +13,8 @@ export const title = (pageTitle: string): string => {
 
 /**
  * Returns a translated page HTML title. You must declare
- * the translation in the messages you pass in to
- * `./i18n.config.ts`. This function appends the localized
- * site name to the title.
+ * the key/value pair in your translation messages. This
+ * function appends the localized site name to the title.
  *
  * @param locKey translation key
  * @returns the localized HTML title, including site name
