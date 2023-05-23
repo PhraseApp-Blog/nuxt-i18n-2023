@@ -28,6 +28,12 @@ export default {
     {n} حلقة
     `,
   },
+  numbers: {
+    title: "أرقام",
+    currency: "عملة: {number}",
+    decimal: "عشري: {number}",
+    percent: "نسبة مئوية: {number}",
+  },
   notifications: {
     new_episode: "أهلاً {username}، حلقة جديدة من {show} نزلت!",
   },

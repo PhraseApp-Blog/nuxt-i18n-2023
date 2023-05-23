@@ -16,6 +16,12 @@ export default {
   show: {
     episodes: "{n} episode | {n} episodes",
   },
+  numbers: {
+    title: "Numbers",
+    currency: "Currency: {number}",
+    decimal: "Decimal: {number}",
+    percent: "Percent: {number}",
+  },
   notifications: {
     new_episode: "Hello, {username}. A new esposide of {show} just landed!",
   },
