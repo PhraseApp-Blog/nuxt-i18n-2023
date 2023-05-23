@@ -23,6 +23,9 @@ export default {
     premiered_at: "Premiered at {date}",
     from_wikipedia: "From Wikipedia",
   },
+  blog: {
+    title: "From the Blog",
+  },
   numbers: {
     title: "Numbers",
     currency: "Currency: {number}",

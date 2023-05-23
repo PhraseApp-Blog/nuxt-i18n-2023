@@ -1,6 +1,7 @@
 ---
 title: Recap of the Second Season of The Mandalorian
 description: Spoiler alert!
+locale: en-ca
 ---
 
 The second season of The Mandalorian follows the continuing adventures of Din Djarin (the Mandalorian) and his quest to reunite the Child (aka Baby Yoda) with the Jedi. Along the way, he encounters new allies, such as the skilled former Rebel shock trooper Cara Dune, and fan-favorite characters from the original trilogy, including Boba Fett and Ahsoka Tano.

@@ -35,6 +35,9 @@ export default {
     premiered_at: "تم عرضه في {date}",
     from_wikipedia: "من ويكيبيديا",
   },
+  blog: {
+    title: "من المدونة",
+  },
   numbers: {
     title: "أرقام",
     currency: "عملة: {number}",
