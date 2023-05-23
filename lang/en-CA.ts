@@ -8,6 +8,10 @@ export default {
   home: {
     title: "Andorable - Star Wars Shows",
     header: "Currently Streaming",
+    meta: {
+      description:
+        "Andorable is a curated list and blog all about streaming Star Wars shows.",
+    },
   },
   about: {
     title: "About",
@@ -15,6 +19,9 @@ export default {
   },
   show: {
     episodes: "{n} episode | {n} episodes",
+    img_alt: "Image for {show}",
+    premiered_at: "Premiered at {date}",
+    from_wikipedia: "From Wikipedia",
   },
   numbers: {
     title: "Numbers",

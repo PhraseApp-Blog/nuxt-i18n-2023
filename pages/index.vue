@@ -2,10 +2,7 @@
   <div>
     <Head>
       <Title>{{ $t("home.title") }}</Title>
-      <Meta
-        name="description"
-        content="Andorable is a curated list and blog all about streaming Star Wars shows."
-      />
+      <Meta name="description" :content="$t('home.meta.description')" />
     </Head>
 
     <h1>{{ $t("home.header") }}</h1>
@@ -17,7 +14,7 @@
         class="overflow-hidden rounded-md bg-slate-900 shadow-sm shadow-slate-900"
       >
         <LocLink :to="`/shows/${show.id}`">
-          <img :src="show.img" :alt="`Image for ${show.name}`" />
+          <img :src="show.img" :alt="$t('show.img_alt', { show: show.name })" />
           <h3 class="mb-1 px-2 pt-1 font-semibold">{{ show.name }}</h3>
           <div
             class="mb-2 flex justify-between px-2 text-xs font-light text-purple-100/50"
@@ -33,6 +30,5 @@
 
 <script setup lang="ts">
 const { locale } = useI18n()
-
 const { data: shows } = await useFetch(`/api/shows?locale=${locale.value}`)
 </script>

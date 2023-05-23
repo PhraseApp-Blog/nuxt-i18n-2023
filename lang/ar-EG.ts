@@ -8,6 +8,10 @@ export default {
   home: {
     title: "أندورَبل - برامج حرب النجوم",
     header: "يُبَث حالياً",
+    meta: {
+      description:
+        "أندورَبل هو قائمة مختارة ومدوّنة تتحدث عن عروض ستار وورز على البث المباشر.",
+    },
   },
   about: {
     title: "نبذة عنا",
@@ -27,6 +31,9 @@ export default {
     |
     {n} حلقة
     `,
+    img_alt: "صورة {show}",
+    premiered_at: "تم عرضه في {date}",
+    from_wikipedia: "من ويكيبيديا",
   },
   numbers: {
     title: "أرقام",
