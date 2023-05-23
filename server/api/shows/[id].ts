@@ -2,6 +2,9 @@ import { showData as shows } from "../../../data/show-data"
 
 export default defineEventHandler(async (event) => {
   const id = +event.context.params!.id
+  const { locale } = getQuery(event)
 
-  return shows.find((show) => show.id === id)!
+  const { translations, ...others } = shows.find((show) => show.id === id)!
+
+  return { ...others, ...translations[locale as keyof typeof translations] }
 })

@@ -30,5 +30,6 @@
 
 <script setup lang="ts">
 const { id } = useRoute().params
-let { data: show } = await useFetch(`/api/shows/${id}`)
+const { locale } = useI18n()
+let { data: show } = await useFetch(`/api/shows/${id}?locale=${locale.value}`)
 </script>

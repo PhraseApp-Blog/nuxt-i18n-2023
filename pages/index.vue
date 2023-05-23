@@ -32,5 +32,7 @@
 </template>
 
 <script setup lang="ts">
-const { data: shows } = await useFetch("/api/shows")
+const { locale } = useI18n()
+
+const { data: shows } = await useFetch(`/api/shows?locale=${locale.value}`)
 </script>
