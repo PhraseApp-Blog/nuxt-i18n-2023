@@ -33,6 +33,6 @@ export default {
     percent: "Percent: {number}",
   },
   notifications: {
-    new_episode: "Hello, {username}. A new esposide of {show} just landed!",
+    new_episode: "Hello, {username}. A new episode of {show} just landed!",
   },
 }
