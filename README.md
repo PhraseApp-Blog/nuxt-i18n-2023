@@ -1,6 +1,7 @@
-# Nuxt 3 Minimal Starter
+# Nuxt 3 I18n Demo
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+This is a Nuxt internationalization (i18n) demo app, companion to a Phrase blog
+tutorial.
 
 ## Setup
 
@@ -38,5 +39,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
